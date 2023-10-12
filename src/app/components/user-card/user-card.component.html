@@ -1,0 +1,4 @@
+<div *ngIf="userName && picture" class="app-user-card">
+  <img [src]="picture.large" alt="id-{{userName.first}}-{{userName.last}}">
+  <h2>{{ userName.first }} {{ userName.last }}</h2>
+</div>

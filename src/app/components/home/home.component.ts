@@ -23,6 +23,10 @@ export class HomeComponent implements OnInit {
       // console.log({userList: this.userList, users})
     });
   }
+
+  userTrackBy(index: number) {
+    return index;
+   }
   
   getMoreUsers(): void {
     this.page += 1;

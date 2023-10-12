@@ -10,32 +10,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 5rem;
-
-    .card {
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-      text-align: center;
-      box-shadow: 0 0 50px -10px black;
-      padding: 5rem;
-      border-radius: 20px;
-      transition: 0.2s all ease-in-out;
-
-      &:hover {
-        transform: translateY(-10px);
-      }
-
-      img {
-        width: 70%;
-        border-radius: 50%;
-      }
-
-      h2 {
-        font-size: 3rem;
-      }
-    }
   }
 
   .btn-container {
