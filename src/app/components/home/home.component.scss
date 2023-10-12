@@ -1,12 +1,15 @@
 .app-home {
   min-height: 100vh;
   width: 100%;
+  padding: 5rem;
+  background: linear-gradient(to bottom right, #2B5971, #342125);
+  color: white;
 
   .body {
     padding: 5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
+    gap: 5rem;
 
     .card {
       cursor: pointer;
@@ -15,7 +18,7 @@
       align-items: center;
       gap: 2rem;
       text-align: center;
-      box-shadow: 0px -3px 27px -15px black;
+      box-shadow: 0 0 50px -10px black;
       padding: 5rem;
       border-radius: 20px;
       transition: 0.2s all ease-in-out;
@@ -32,6 +35,49 @@
       h2 {
         font-size: 3rem;
       }
+    }
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+
+    button {
+      font-size: 2rem;
+      min-width: 15rem;
+      color: #fff;
+      padding: 1.5rem 3rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      border-radius: 5px;
+      z-index: 0;
+      background: transparent;
+      overflow: hidden;
+      border: 2px solid #2A586F;
+      letter-spacing: 2px;
+      // color: #fff;
+    }
+    button:hover {
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    button:hover:after {
+      height: 0%;
+    }
+    button:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      transition: all 0.3s ease;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      background: #2A586F;
     }
   }
 }
