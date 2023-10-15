@@ -1,10 +1,9 @@
 <div class="app-home">
-  <h1>This is the best project ever</h1>
-
+  <h1>Address Book App</h1>
   <ul *ngIf="userList && userList.length" class="body">
     <li *ngFor="let user of userList; trackBy: userTrackBy">
       <app-user-card
-        (click)="setUser(user)"
+        (click)="goToUserDetails(user)"
         [userName]="user.name"
         [picture]="user.picture"
       ></app-user-card>

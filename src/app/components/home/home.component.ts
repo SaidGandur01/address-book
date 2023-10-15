@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 import { IUserResponse, User } from 'src/app/utils';
 
@@ -10,7 +11,10 @@ import { IUserResponse, User } from 'src/app/utils';
 export class HomeComponent implements OnInit {
   userList : User[] = [];
   page = 1;
-  constructor(private userService: UserService) { }
+  constructor(
+    private userService: UserService,
+    private router: Router  
+  ) { }
 
   ngOnInit(): void {
     this.initializeData();
@@ -20,7 +24,6 @@ export class HomeComponent implements OnInit {
     this.userService.getUsers(this.page).subscribe((res: IUserResponse) => {
       const users = res.results
       this.userList = this.userList.concat(users);
-      // console.log({userList: this.userList, users})
     });
   }
 
@@ -33,9 +36,10 @@ export class HomeComponent implements OnInit {
     this.initializeData();
   }
 
-  setUser(user: User): void {
+  goToUserDetails(user: User): void {
     this.userService.setUser(user);
-    this.test();
+    console.log(user)
+    this.router.navigate(['user'])
   }
 
   test(): void {

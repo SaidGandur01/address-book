@@ -1,1 +1,41 @@
-<p>user-details works!</p>
+<div class="user-details">
+  <div *ngIf="user" class="content">
+    <a (click)="goToMainPage()">&larr;</a>
+    <div class="back-arrow">
+    </div>
+    <div class="header">
+      <img [src]="user.picture.large" alt="user-avatar">
+      <h2>{{ user.name.first }} {{ user.name.last }}</h2>
+    </div> 
+    <div class="information">
+      <div class="column">
+        <div class="item">
+          <h3 class="attribute">Gender</h3>
+          <span class="value">{{ user.gender }}</span>
+        </div>
+        <div class="item">
+          <h3 class="attribute">Email</h3>
+          <span class="value">{{ user.email }}</span>
+        </div>
+        <div class="item">
+          <h3 class="attribute">Phone</h3>
+          <span class="value">{{ user.phone }}</span>
+        </div>
+      </div>
+      <div class="column">
+        <div class="item">
+          <h3 class="attribute">Age</h3>
+          <span class="value">{{ user.dob.age }}</span>
+        </div>
+        <div class="item">
+          <h3 class="attribute">Date of birthday</h3>
+          <span class="value">{{ user.dob.date | date: 'dd/MM/yyyy' }}</span>
+        </div>
+        <div class="item">
+          <h3 class="attribute">Nationality</h3>
+          <span class="value">{{ user.nat }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
