@@ -8,6 +8,12 @@
 4. For the creation of the layouts the main css focuses were flexbox and grid.
 5. The website is completely responsive and has been though for mobile devices as well.
 6. The project follows the design at high level.
+7. There is a home page where an initial request gets 10 random users, the app routing module is used to handle all the routes in the project.
+8. With more time i would like to implement some unit tests.
+
+## Run project
+
+To run the project just do npm install to get all the dependencies and run npm start
 
 ## Deployment
 
