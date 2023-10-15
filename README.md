@@ -1,27 +1,34 @@
-# AddresBook
+# Tradeview Markets
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+#### This project represents a address book app. This project has these considerations
 
-## Development server
+1. Use of angular framework.
+2. The integration of a good architecture of code following the best practices.
+3. Creation of reusable components.
+4. For the creation of the layouts the main css focuses were flexbox and grid.
+5. The website is completely responsive and has been though for mobile devices as well.
+6. The project follows the design at high level.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Deployment
 
-## Code scaffolding
+The project has been deployed to this link: [vue project](https://address-book-roan-ten.vercel.app/home).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Screenshots
 
-## Build
+These are some images from the project:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Desktop
 
-## Running unit tests
+![Alt text](image.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Alt text](image-1.png)
 
-## Running end-to-end tests
+![Alt text](image-2.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Mobile
 
-## Further help
+![Alt text](image-3.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Alt text](image-4.png)
+
+![Alt text](image-5.png)
